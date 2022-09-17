@@ -53,6 +53,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
              }
         }
+        print("task done")
         task.resume()
         
     }
