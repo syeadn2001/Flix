@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00D84B228D62BDA00A9C4CA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D84B128D62BDA00A9C4CA /* MovieCell.swift */; };
 		D0D5F8A428D56F7300F8C365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5F8A328D56F7300F8C365 /* AppDelegate.swift */; };
 		D0D5F8A628D56F7300F8C365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5F8A528D56F7300F8C365 /* SceneDelegate.swift */; };
 		D0D5F8A828D56F7300F8C365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5F8A728D56F7300F8C365 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D00D84B128D62BDA00A9C4CA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D0D5F8A028D56F7300F8C365 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D5F8A328D56F7300F8C365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D5F8A528D56F7300F8C365 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,8 +62,9 @@
 			children = (
 				D0D5F8A328D56F7300F8C365 /* AppDelegate.swift */,
 				D0D5F8A528D56F7300F8C365 /* SceneDelegate.swift */,
-				D0D5F8B928D5796600F8C365 /* MoviesViewController.swift */,
 				D0D5F8A728D56F7300F8C365 /* ViewController.swift */,
+				D0D5F8B928D5796600F8C365 /* MoviesViewController.swift */,
+				D00D84B128D62BDA00A9C4CA /* MovieCell.swift */,
 				D0D5F8A928D56F7300F8C365 /* Main.storyboard */,
 				D0D5F8AC28D56F7600F8C365 /* Assets.xcassets */,
 				D0D5F8AE28D56F7600F8C365 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				D0D5F8A828D56F7300F8C365 /* ViewController.swift in Sources */,
 				D0D5F8A428D56F7300F8C365 /* AppDelegate.swift in Sources */,
 				D0D5F8A628D56F7300F8C365 /* SceneDelegate.swift in Sources */,
+				D00D84B228D62BDA00A9C4CA /* MovieCell.swift in Sources */,
 				D0D5F8BA28D5796600F8C365 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
