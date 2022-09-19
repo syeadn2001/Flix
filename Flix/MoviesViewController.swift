@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import AlamofireImage
 //These classes allow a View Conroller to interact with a UITableView
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -77,10 +77,17 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let sum = movie["overview"] as! String
         
-
         //MARK: Another example of optional checking with either ! or ?
         cell.titleLabel.text = title
         cell.synopsisLabel.text = sum
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        
+        //When working with URLs, must caste strings representign URLs to an actual URL type (will validate whether the string is a valid URL or not)
+        let posterUrl = URL(string:baseUrl+posterPath)
+        
+        cell.posterView.af.setImage(withURL: posterUrl!)
         return cell;
     }
     
