@@ -165,7 +165,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w2d-Dy-tq1">
                                 <rect key="frame" x="0.0" y="33" width="414" height="803"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="xpQ-kR-vWd">
                                     <size key="itemSize" width="200" height="196"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -195,7 +195,6 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eJf-WX-SYa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Superheroes" id="4pK-Vz-QO5"/>
                     <connections>
