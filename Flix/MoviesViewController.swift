@@ -93,14 +93,33 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
 
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    //Sender would be the UITableViewCell b/c it is what you are clicking to traverse to next segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+        
+        //Find the selected movie
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        
+        
+        let movie = movies[indexPath.row]
+        
+        
+        //Select & specify the destination VC after our segue
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        //Passing the info from this view controller (that collects from Movie API) to the details view
+        detailsViewController.movie = movie
+        
+        //Function of table view that lets you alter how deselecting a row is animated
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
-    */
+    
 
 }
